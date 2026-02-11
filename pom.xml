@@ -1,0 +1,31 @@
+package segundo_ejercicio;
+
+        import java.util.ArrayList;
+        import java.util.List;
+
+        public class Main {
+        public static void main(String[] args) {
+
+
+        List<Producto> lista1 = new ArrayList<>();
+
+
+    Producto pr1 = new Producto("111", "leche", "5000");
+    Producto pr2 = new Producto("222", "huevo", "6000");
+    Producto pr3 = new Producto("333", "pan", "7000");
+
+    Pedido p1 = new Pedido("1", "exito","leche");
+    Pedido p2 = new Pedido("2", "exito","huevo");
+
+    p1.Det(p1);
+    p2.Det(p2);
+
+    for(Producto p : p1.ge();) {
+    Sys
+    }
+
+
+    }
+
+
+    }
