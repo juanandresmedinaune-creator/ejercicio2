@@ -21,7 +21,9 @@ public class Main {
         p1.agregarProducto(pr2);
         p1.agregarProducto(pr3);
 
-
+        System.out.println("Codigo pedido: " + p1.getCodigo());
+        System.out.println("Lugar: " + p1.getLugar());
+        System.out.println("Productos:");
 
         for(Producto p : p1.getProductos()) {
             System.out.println(p.toString());
