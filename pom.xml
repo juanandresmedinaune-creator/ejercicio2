@@ -1,31 +1,17 @@
-package segundo_ejercicio;
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-        import java.util.ArrayList;
-        import java.util.List;
+    <groupId>org.example</groupId>
+    <artifactId>quinto</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
-        public class Main {
-        public static void main(String[] args) {
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-
-        List<Producto> lista1 = new ArrayList<>();
-
-
-    Producto pr1 = new Producto("111", "leche", "5000");
-    Producto pr2 = new Producto("222", "huevo", "6000");
-    Producto pr3 = new Producto("333", "pan", "7000");
-
-    Pedido p1 = new Pedido("1", "exito","leche");
-    Pedido p2 = new Pedido("2", "exito","huevo");
-
-    p1.Det(p1);
-    p2.Det(p2);
-
-    for(Producto p : p1.ge();) {
-    Sys
-    }
-
-
-    }
-
-
-    }
+</project>

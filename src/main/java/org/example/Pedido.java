@@ -1,4 +1,4 @@
-package segundo_ejercicio;
+package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,18 +7,27 @@ public class Pedido {
 
     private String codigo;
     private String lugar;
-    private String  productos;
 
-    List<Pedido> pe = new ArrayList<>();
+    List<Producto> productos = new ArrayList<>();
 
     public Pedido() {
     }
 
-    public Pedido(String codigo, String lugar, String productos) {
+    public Pedido(String codigo, String lugar) {
         this.codigo = codigo;
         this.lugar = lugar;
+    }
+
+    public void agregarProducto(Producto producto) {
+        productos.add(producto);
+    }
+
+    public List<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<Producto> productos) {
         this.productos = productos;
-        this.pe.add(this);
     }
 
     public String getCodigo() {
@@ -37,25 +46,12 @@ public class Pedido {
         this.lugar = lugar;
     }
 
-    public String getProductos() {
-        return productos;
-    }
-
-    public void setProductos(String productos) {
-        this.productos = productos;
-    }
-
     @Override
     public String toString() {
         return "Pedido{" +
                 "codigo='" + codigo + '\'' +
                 ", lugar='" + lugar + '\'' +
-                ", productos='" + productos + '\'' +
+                ", productos=" + productos +
                 '}';
     }
-
-    public void  Det(Pedido pedido) {
-        this.pe.add(pedido);
-    }
 }
-

@@ -1,4 +1,4 @@
-package segundo_ejercicio;
+package org.example;
 
 public class Producto {
 
